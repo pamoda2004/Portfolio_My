@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/ceba2ad8b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- HEADER / HERO -->
+  <header id="home" class="header">
+    <div class="container">
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <img src="word.png" alt="Logo" class="logo" />
+
+        <ul id="sidemenu" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <!-- HERO CONTENT -->
+      <div class="hero">
+        <div class="hero-text">
+          <p class="pill">Web Developer • UI Designer</p>
+
+          <h1>
+            Hi, I’m <span>Pamoda Jayathilaka</span><br />
+            I build clean websites
+          </h1>
+
+          <p class="sub">
+            I create modern, responsive, and user-friendly interfaces with
+            comfortable design and smooth experience.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#portfolio">View Portfolio</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-image" aria-hidden="true"></div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-------------------------About------------------------->
+  <section id="about" class="about">
+    <div class="container">
+
+      <div class="about-wrap">
+        <div class="about-card about-photo" aria-hidden="true"></div>
+
+        <div class="about-card about-content">
+          <h1 class="sub-title">About Me</h1>
+
+          <p class="about-text">
+            I am a passionate web developer and UI designer with expertise in creating modern,
+            responsive websites. My goal is to build user-friendly interfaces that provide an
+            excellent user experience. I am a second year student studying computer science with AI in NIBM.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+            <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+            <p class="tab-links" onclick="opentab(event,'Go - tos')">Go - tos</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>HTML, CSS, JavaScript</span><br />Designing web/app interfaces</li>
+              <li><span>React (Basics)</span><br />Building dynamic web pages</li>
+              <li><span>Machine Learning</span><br />Converting data into smart predictions & insights</li>
+              <li><span>UI/UX Principles</span><br />Comfortable & clean designs</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2025</span><br />Web Application</li>
+              <li><span>2025</span><br />UI Design Practice Projects</li>
+              <li><span>2026 - Present</span><br />Building Machine Learning models</li>
+              <li><span>2026 - Present</span><br />Creating a web application combined with machine learning models</li>
+
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>University / Institute</span><br />🔹 Nibm city uni<br>Bsc(Hons) Computer Science with
+                Artificial Intelligence (UG)</li>
+              <li><span>School</span><br />🔹 Pinnawala Central Collage Rambukkana </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="Go - tos">
+            <ul>
+              <li><span>AI Tools</span><br />🔹 ChatGPT<br>🔹 Gemini<br>🔹 Claude<br>🔹 Perplexity<br>🔹 Grok AI </li>
+              
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+
+    <!-----------services------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+
+        <!-- FIXED class name -->
+        <div class="services-list">
+
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h2>Web Development</h2>
+            <p>Building responsive and modern websites using HTML, CSS, and JavaScript.</p>
+            
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">⚛️</div>
+            <h2>React Development</h2>
+            <p>Building dynamic web pages using React (Basics).</p>
+            
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">🎯</div>
+            <h2>ML Model Building</h2>
+            <p>Creating and training machine learning models for data analysis and predictions.</p>
+            
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">✨</div>
+            <h2>Figma Design</h2>
+            <p>Creating user-friendly interfaces with comfortable design and smooth experience.</p>
+            
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">☕</div>
+            <h2>Java Development</h2>
+            <p>Developing robust and scalable applications using Java programming language.</p>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!------------------portfolio--------------->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="work-list">
+          <div class="work">
+            <img src="https://raykhira.com/wp-content/uploads/2024/04/webapp.jpeg"
+              alt="Project 1" class="work-image" />
+            <div class="layer">
+              <h3>Web Application</h3>
+              <p>Creating a six-page responsive website using ML as part of the design</p>
+              <a href="https://my-travel-website-xooa.vercel.app/" class="work-link">View Project →</a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="https://www.mindinventory.com/blog/wp-content/uploads/2024/12/mobile-app-ui-ux-design-trends.webp"
+              alt="Project 2" class="work-image" />
+            <div class="layer">
+              <h3>UI/UX Design</h3> 
+              <p>UI design for web pages for a furniture store</p>
+              <a href="https://www.figma.com/design/ewbGube1ktVrT10ztcMZFH/Project__2?node-id=0-1&t=rRUjnIF9fuMYMyab-1" class="work-link">View Project →</a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="https://miro.medium.com/v2/resize:fit:1400/1*aSC3odScNMyz7Y6MZvqJ1Q.jpeg"
+              alt="Project 3" class="work-image" />
+            <div class="layer">
+              <h3>ML Model</h3>
+              <p>Choosing the vehicle of your choice that best suits your budget.</p>
+              <a href="https://vehicle-mlmodel.vercel.app/" class="work-link">View Project →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------contact----------------->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-wrap">
+
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+
+            <p class="contact-line">📧 <a href="mailto:jayathilakapamoda9@gmail.com">jayathilakapamoda9@gmail.com</a>
+            </p>
+            <p class="contact-line">📞 <a href="tel:+94771037072">0771037072</a></p>
+
+            <div class="social-icons">
+              <a href="https://www.facebook.com/share/1CArm8zGzc/?mibextid=wwXIfr" aria-label="Facebook"
+                target="_blank">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-icon-logo-png-transparent.png"
+                  alt="Facebook">
+              </a>
+              <a href="https://www.linkedin.com/in/pamoda-jayathilaka-ba4b5339a/" aria-label="Linkedin" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bGEl9v47XieEtHyj0TqTr1tOXJmib-KHtw&s"
+                  alt="Linkedin">
+              </a>
+              <a href="https://github.com/pamoda2004" aria-label="Github" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1CLK7ijKDV1QiPsBsAKkaSkKx0QWAec8Tg&s" alt="Github">
+              </a>
+
+              <a href="https://www.instagram.com/pamoda__r?igsh=MW9oNjZvbGJuaW1rMQ%3D%3D&utm_source=qr" aria-label="Instagram" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png" alt="Instagram">
+              </a>
+
+            </div>
+
+            <a href="CV (1).pdf" download class="btn-contact">Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet"class="contact-form" action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+              <button type="submit" class="btn-contact primary">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+
+        </div>
+
+        <!-- ================= COPYRIGHT ================= -->
+        <footer class="copyright">
+          <p>© 2026 <span>Pamoda Jayathilaka</span>. All rights reserved.</p>
+        </footer>
+    </section>
+<!------------djs-------->
+  </section>
+
+  <script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(evt, tabname) {
+      for (let tablink of tablinks) tablink.classList.remove("active-link");
+      for (let tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
+      evt.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwCvk1IcrWyYvmfmo2dsEpgcJZe9cKdi0ndiqlWLWk7Mmr4TG2KvoO5yQThAchbsQzy6g/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully!"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> 
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+    
+  </script>
+
+</body>
+
+</html>
