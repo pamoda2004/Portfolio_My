@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 239 35% 9%;
+    --foreground: 210 40% 96%;
+
+    --card: 239 35% 12%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 239 35% 12%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 220 100% 74%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 239 35% 15%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 215 25% 77%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 220 100% 74%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 96%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 220 100% 74%;
+
+    --radius: 22px;
+
+    --transition-timing: cubic-bezier(0.4, 2, 0.3, 1);
+    --hero-gradient: linear-gradient(135deg, #0F1020 0%, #151735 100%);
+    --accent-gradient: linear-gradient(135deg, rgba(122, 167, 255, 0.95) 0%, rgba(122, 167, 255, 0.7) 100%);
+
+    --card-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+    --card-shadow-hover: 0 20px 48px rgba(0, 0, 0, 0.5);
+
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.14);
+  }
+
+  body {
+    --background: 239 35% 9%;
+    color-scheme: dark;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+  }
+
+  .card-shadow-hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .premium-transition {
+    transition: all var(--transition-timing);
+  }
+}
