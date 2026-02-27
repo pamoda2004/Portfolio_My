@@ -1,6 +1,6 @@
 import { useState, FormEvent } from "react";
 import ScrollReveal from "./ScrollReveal";
-import { Facebook, Github, Instagram, Linkedin, Mail, Send } from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, Send } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactSection = () => {
@@ -129,10 +129,7 @@ const ContactSection = () => {
                 className="w-11 h-11 rounded-full bg-card card-shadow flex items-center justify-center text-muted-foreground hover:text-primary hover:card-shadow-hover transition-all">
                 <Instagram size={20} />
               </a>
-              <a href="jayathilakapamoda9@gmail.com" aria-label="Email"
-                className="w-11 h-11 rounded-full bg-card card-shadow flex items-center justify-center text-muted-foreground hover:text-primary hover:card-shadow-hover transition-all">
-                <Mail size={20} />
-              </a>
+            
             </div>
           </ScrollReveal>
         </div>
